@@ -16,7 +16,7 @@ BASEURL = "./src/sanic_domonic_h5bp"
 
 
 def configure_static_assets(app: Sanic) -> None:
-    """Configure the static file path for `path`."""
+    """Configure routes for all files under the `static` dir."""
     static_dir = f"{BASEURL}/static"
     asset_paths = glob(f"{static_dir}/**/*.*", recursive=True)
     for path in asset_paths:
@@ -25,12 +25,12 @@ def configure_static_assets(app: Sanic) -> None:
 
 
 def page(req: Request, title: str, desc: str, content: Sequence[Element]) -> HTTPResponse:
-    """Construct and return an HTML string representing an entire page."""
+    """Construct and return an entire page."""
     return response_html(f"{_html(req, title, desc, content)}")
 
 
 def _body(content: Sequence) -> Element:
-    """Construct and return the HTML5 <body> element."""
+    """Return a <body> element with the given `content`."""
     return body(
         *content,
         script(_src="js/vendor/modernizr-3.11.2.min.js"),
@@ -42,7 +42,7 @@ def _body(content: Sequence) -> Element:
 
 
 def _google_analytics(site_id: str) -> Sequence[Element]:
-    """Return Google Analytics snippet."""
+    """Return a Google Analytics snippet."""
     return (
         script(
             f"""
@@ -54,7 +54,7 @@ def _google_analytics(site_id: str) -> Sequence[Element]:
 
 
 def _head(req: Request, title_: str, desc: str) -> Element:
-    """Construct and return the HTML5 <head> element."""
+    """Return a <head> element with `title` and `desc`."""
     return head(
         meta(_charset=UTF8),
         title(title_),
