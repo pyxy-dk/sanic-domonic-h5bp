@@ -2,15 +2,39 @@
 
 from __future__ import annotations
 
+from functools import lru_cache
 from glob import glob
 from typing import Sequence
 
-from domonic.html import Element, body, head, html, link, meta, script, title
+from domonic.html import (
+    Element,
+    body,
+    comment,
+    h1,
+    head,
+    html,
+    link,
+    meta,
+    p,
+    script,
+    style,
+    title,
+)
 from sanic import Sanic
 from sanic.request import Request
 from sanic.response import HTTPResponse, html as response_html
 
-from .strings import DESCRIPTION, UTF8, VIEWPORT, VIEWPORT_CONTENT, WEBSITE
+from .strings import (
+    DESCRIPTION,
+    NOT_FOUND_COMMENT,
+    NOT_FOUND_MESSAGE,
+    NOT_FOUND_STYLE,
+    NOT_FOUND_TITLE,
+    UTF8,
+    VIEWPORT,
+    VIEWPORT_CONTENT,
+    WEBSITE,
+)
 
 BASEURL = "./src/sanic_domonic_h5bp"
 
@@ -22,6 +46,26 @@ def configure_static_assets(app: Sanic) -> None:
     for path in asset_paths:
         route = path[len(static_dir) :]
         app.static(route, path)
+
+
+@lru_cache(maxsize=None)
+def not_found() -> HTTPResponse:
+    """Construct and return the content of a 404 page."""
+    four_oh_four = html(
+        head(
+            meta(_charset=UTF8),
+            title(NOT_FOUND_TITLE),
+            meta(_name=VIEWPORT, _content=VIEWPORT_CONTENT),
+            style(NOT_FOUND_STYLE),
+        ),
+        body(
+            h1(NOT_FOUND_TITLE),
+            p(NOT_FOUND_MESSAGE),
+        ),
+        comment(NOT_FOUND_COMMENT),
+        _lang="en",
+    )
+    return response_html(f"{four_oh_four}")
 
 
 def page(req: Request, title: str, desc: str, content: Sequence[Element]) -> HTTPResponse:
