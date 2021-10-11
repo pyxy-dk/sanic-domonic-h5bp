@@ -26,7 +26,7 @@ pipenv install --dev
 
 pipenv shell
 
-sanic src.sanic-domonic-h5bp.app
+sanic src.sanic_domonic_h5bp.app
 ```
 
 Note that Sanic does not officially support running on Windows.
@@ -40,36 +40,36 @@ this template project:
 h5bp
 │
 ├── css
-│   ├── main.css                      ⇒ ./src/sanic-domonic-h5bp/static/css/
-│   └── normalize.css                 ⇒ ./src/sanic-domonic-h5bp/static/css/
+│   ├── main.css                      ⇒ ./src/sanic_domonic_h5bp/static/css/
+│   └── normalize.css                 ⇒ ./src/sanic_domonic_h5bp/static/css/
 │
 ├── doc                               ¬ Not included
 │
-├── img                               ⇒ ./src/sanic-domonic-h5bp/static/img/
+├── img                               ⇒ ./src/sanic_domonic_h5bp/static/img/
 │
 ├── js
 │   ├── vendor
-│   │   └── modernizer-3.11.2.min.js  ⇒ ./src/sanic-domonic-h5bp/static/js/vendor/
-│   ├── main.js                       ⇒ ./src/sanic-domonic-h5bp/static/js/
-│   └── plugins.js                    ⇒ ./src/sanic-domonic-h5bp/static/js/
+│   │   └── modernizer-3.11.2.min.js  ⇒ ./src/sanic_domonic_h5bp/static/js/vendor/
+│   ├── main.js                       ⇒ ./src/sanic_domonic_h5bp/static/js/
+│   └── plugins.js                    ⇒ ./src/sanic_domonic_h5bp/static/js/
 │
 ├── .editorconfig                     ⇒ expanded in ./.editorconfig
 ├── .gitattributes                    ⇒ expanded in ./.gitattributes
 ├── .gitignore                        ⇒ expanded in ./.gitignore
 ├── .htaccess                         ¬ Not included
 ├── 404.html                          ⇏ Implemented in domonic
-├── browserconfig.xml                 ⇒ ./src/sanic-domonic-h5bp/static/
-├── favicon.ico                       ⇒ ./src/sanic-domonic-h5bp/static/
-├── humans.txt                        ⇒ ./src/sanic-domonic-h5bp/static/
-├── icon.png                          ⇒ ./src/sanic-domonic-h5bp/static/
+├── browserconfig.xml                 ⇒ ./src/sanic_domonic_h5bp/static/
+├── favicon.ico                       ⇒ ./src/sanic_domonic_h5bp/static/
+├── humans.txt                        ⇒ ./src/sanic_domonic_h5bp/static/
+├── icon.png                          ⇒ ./src/sanic_domonic_h5bp/static/
 ├── index.html                        ⇏ Implemented in domonic
 ├── LICENSE.txt                       ⇒ ./LICENSE
 ├── package.json                      ¬ Not included
 ├── package-lock.json                 ¬ Not included
-├── robots.txt                        ⇒ ./src/sanic-domonic-h5bp/static/
-├── site.webmanifest                  ⇒ ./src/sanic-domonic-h5bp/static/
-├── tile.png                          ⇒ ./src/sanic-domonic-h5bp/static/
-└── tile-wide.png                     ⇒ ./src/sanic-domonic-h5bp/static/
+├── robots.txt                        ⇒ ./src/sanic_domonic_h5bp/static/
+├── site.webmanifest                  ⇒ ./src/sanic_domonic_h5bp/static/
+├── tile.png                          ⇒ ./src/sanic_domonic_h5bp/static/
+└── tile-wide.png                     ⇒ ./src/sanic_domonic_h5bp/static/
 ```
 
 ## 🙏 Thanks to
