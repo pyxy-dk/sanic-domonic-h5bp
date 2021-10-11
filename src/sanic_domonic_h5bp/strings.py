@@ -1,5 +1,6 @@
 """HTML5 Boilerplate strings."""
 
+DESCRIPTION = "description"
 NOT_FOUND_COMMENT = (
     " IE needs 512+ bytes: "
     "https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages "
@@ -51,3 +52,7 @@ NOT_FOUND_STYLE = """
 
             }"""
 NOT_FOUND_TITLE = "Page Not Found"
+UTF8 = "utf-8"
+VIEWPORT = "viewport"
+VIEWPORT_CONTENT = "width=device-width, initial-scale=1"
+WEBSITE = "website"
