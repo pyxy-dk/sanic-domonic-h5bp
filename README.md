@@ -10,12 +10,12 @@ If you need frontend interactivity, this template goes well with e.g.
 [HTMX](htmx) and [HyperScript](hyperscript) rather than your run-of-the-mill
 bloated JS framework *du jour*.
 
-## Requirements
+## 📋 Requirements
 
 * `python-3.8`
 * `pipenv`
 
-## Running
+## 🏃 Running
 
 ```text
 git clone git@github.com:pyxy-dk/sanic-domonic-h5bp.git
@@ -31,7 +31,7 @@ sanic src.sanic-domonic-h5bp.app
 
 Note that Sanic does not officially support running on Windows.
 
-## File mapping from H5BP
+## 🗺️ File mapping from H5BP
 
 The files from a standard download of H5BP 8.0 maps to the following files in
 this template project:
@@ -72,11 +72,12 @@ h5bp
 └── tile-wide.png                     ⇒ ./src/sanic-domonic-h5bp/static/
 ```
 
-## Thanks to
+## 🙏 Thanks to
 
 * The [Sanic](sanic) web server and framework.
 * [domonic], the fiendishly good HTML generator library.
 * Good old [HTML5 Boilerplate](h5bp).
+
 
 [black-badge-href]: https://github.com/psf/black
 [black-badge-img]: https://img.shields.io/badge/code%20style-black-000000.svg
