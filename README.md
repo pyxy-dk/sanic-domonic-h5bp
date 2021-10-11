@@ -8,7 +8,7 @@ A template repository implementing HTML5 Boilerplate 8.0 in Sanic using the
 Domonic framework.
 
 If you need frontend interactivity, this template goes well with e.g.
-[HTMX](htmx) and [HyperScript](hyperscript) rather than your run-of-the-mill
+[HTMX][htmx] and [HyperScript][hyperscript] rather than your run-of-the-mill
 bloated JS framework *du jour*.
 
 ## 📋 Requirements
