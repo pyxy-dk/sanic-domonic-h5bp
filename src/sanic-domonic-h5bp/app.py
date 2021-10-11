@@ -33,7 +33,7 @@ async def not_found(req: request.Request) -> response.HTTPResponse:
             p(NOT_FOUND_MESSAGE),
         ),
         comment(NOT_FOUND_COMMENT),
-        _lang="en"
+        _lang="en",
     )
     return response.html(f"{four_oh_four}")
 

@@ -1,6 +1,7 @@
 """Sanic/Domonic helper functions."""
 
 from glob import glob
+
 from domonic.html import Element, body, div, head, html, span
 from sanic import Sanic, request, response
 
@@ -10,7 +11,7 @@ def configure_static_assets(app: Sanic) -> None:
     static_dir = f"{app.config.BASEURL}/static"
     asset_paths = glob(f"{static_dir}/**/*.*", recursive=True)
     for path in asset_paths:
-        route = path[len(static_dir):]
+        route = path[len(static_dir) :]
         app.static(route, path)
 
 
@@ -21,9 +22,7 @@ def page(req: request.Request, **kwargs) -> response.HTTPResponse:
 
 def _body() -> Element:
     """Construct and return the HTML5 <body> element."""
-    return body(
-        div(span("Hello world!"))
-    )
+    return body(div(span("Hello world!")))
 
 
 def _head() -> Element:
