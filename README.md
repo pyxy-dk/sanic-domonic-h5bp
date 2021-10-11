@@ -1,7 +1,7 @@
 # sanic-domonic-h5bp
 
 ![Pipenv - Python version][pipenv-badge-img]
-[![Imports: isort](isort-badge-img)](isort-badge-href)
+[![Imports: isort][isort-badge-img]][isort-badge-href]
 [![Code style: black][black-badge-img]][black-badge-href]
 
 A template repository implementing HTML5 Boilerplate 8.0 in Sanic using the
@@ -87,6 +87,6 @@ h5bp
 [htmx]: https://htmx.org/
 [hyperscript]: https://hyperscript.org/
 [isort-badge-href]: https://pycqa.github.io/isort/
-[isort-badge-img]: https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336
+[isort-badge-img]: https://img.shields.io/badge/imports-isort-%231674b1?style=flat&labelColor=ef8336
 [pipenv-badge-img]: https://img.shields.io/github/pipenv/locked/python-version/pyxy-dk/sanic-domonic-h5bp
 [sanic]: https://sanicframework.org/
