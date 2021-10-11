@@ -5,10 +5,12 @@ from glob import glob
 from domonic.html import Element, body, div, head, html, span
 from sanic import Sanic, request, response
 
+BASEURL = "./src/sanic-domonic-h5bp"
+
 
 def configure_static_assets(app: Sanic) -> None:
     """Configure the static file path for `path`."""
-    static_dir = f"{app.config.BASEURL}/static"
+    static_dir = f"{BASEURL}/static"
     asset_paths = glob(f"{static_dir}/**/*.*", recursive=True)
     for path in asset_paths:
         route = path[len(static_dir) :]

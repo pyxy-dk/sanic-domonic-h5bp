@@ -9,7 +9,6 @@ from .helpers import configure_static_assets, page
 from .strings import NOT_FOUND_COMMENT, NOT_FOUND_MESSAGE, NOT_FOUND_STYLE, NOT_FOUND_TITLE
 
 app = Sanic("sanic-domonic-h5bp")
-app.update_config("./.env")
 configure_static_assets(app)
 
 
