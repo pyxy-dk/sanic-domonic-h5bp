@@ -75,9 +75,9 @@ h5bp
 
 ## 🙏 Thanks to
 
-* The [Sanic](sanic) web server and framework.
+* The [Sanic][sanic] web server and framework.
 * [domonic], the fiendishly good HTML generator library.
-* Good old [HTML5 Boilerplate](h5bp).
+* Good old [HTML5 Boilerplate][h5bp].
 
 
 [black-badge-href]: https://github.com/psf/black
