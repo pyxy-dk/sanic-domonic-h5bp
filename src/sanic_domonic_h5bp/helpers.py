@@ -82,6 +82,10 @@ def _body(content: Sequence) -> Element:
         script(_src="js/main.js"),
         # TODO Google Analytics: change UA-XXXXX-Y to be your site's ID.
         *_google_analytics("UA-XXXXX-Y"),
+        # Non-H5BP editorial comment: please consider using another analytics solution
+        # instead of gifting your users' data to Alphabet Inc. - see e.g.
+        # <https://mentalpivot.com/ethical-web-analytics-alternatives-google/>
+        # for a discussion of alternatives.
     )
 
 
