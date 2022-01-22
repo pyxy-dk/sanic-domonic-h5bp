@@ -4,11 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-domonic = "~=0.6"
-sanic = "~=21.9"
+domonic = "~=0.8"
+sanic = "~=21.12"
 
 [dev-packages]
-black = "==21.9b0"
+black = "==21.12b0"
 isort = "*"
 
 [requires]
