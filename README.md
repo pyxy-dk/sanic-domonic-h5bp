@@ -13,7 +13,7 @@ bloated JS framework *du jour*.
 
 ## 📋 Requirements
 
-* `python-3.8`
+* `python-3.8` or newer
 * `pipenv`
 
 ## 🏃 Running
@@ -29,6 +29,8 @@ pipenv shell
 
 sanic src.sanic_domonic_h5bp.app
 ```
+
+Now open <http://localhost:8000/> in your browser.
 
 Note that Sanic does not officially support running on Windows.
 
@@ -78,7 +80,6 @@ h5bp
 * The [Sanic][sanic] web server and framework.
 * [domonic], the fiendishly good HTML generator library.
 * Good old [HTML5 Boilerplate][h5bp].
-
 
 [black-badge-href]: https://github.com/psf/black
 [black-badge-img]: https://img.shields.io/badge/code%20style-black-000000.svg

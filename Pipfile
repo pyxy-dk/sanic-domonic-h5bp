@@ -4,15 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-domonic = "~=0.8"
-sanic = "~=21.12"
+domonic = "~=0.9"
+sanic = "~=22.6"
 
 [dev-packages]
-black = "==21.12b0"
+black = "*"
 isort = "*"
-
-[requires]
-python_version = "3.8"
 
 [scripts]
 lint = "python -m scripts.lint"
